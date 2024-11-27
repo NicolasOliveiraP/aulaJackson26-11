@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garagem</title>
+    <link rel="stylesheet" href="styletabela.css">
+</head>
+<body>
+    <h1>Veículos na Garagem</h1>
+    <table id="tabelaDados">
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Placa</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Linhas de dados serão adicionadas aqui dinamicamente -->
+        </tbody>
+    </table>
+    <div id="modalAcoes" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Configurações do veiculo <span id="veiculoPlaca"></span>?</p>
+            <button id="btnExcluir">Excluir</button>
+            <button id="btnEditar">Editar</button>
+        </div>
+    </div>
+    <script src="scripttabela.js"></script>
+</body>
+</html>
